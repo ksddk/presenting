@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import TodoForm from '../components/Todos/TodoForm';
-import TodosActions from '../components/Todos/TodosActions';
-import TodoList from '../components/Todos/TodoList';
+import TodoForm from '../ShoppingList/Todos/TodoForm';
+import TodosActions from '../ShoppingList/Todos/TodosActions';
+import TodoList from '../ShoppingList/Todos/TodoList';
 import '../App.css';
 
 function ShoppingListing() {
