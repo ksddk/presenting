@@ -1,39 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Pages/Layout";
+import Home from "./Pages/Home";
+import ShoppingListing from "./Pages/ShoppingList";
+import NoPage from "./Pages/NoPage";
 import './index.css';
-import App from './App';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
-import Root, { loader as rootLoader } from "./routes/root";
+// import App from './App';
 
-const router = createBrowserRouter([
-    {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    loader: rootLoader,
-    children: [
-      {
-        path: "contacts/:contactId",
-        element: <Contact />,
-      },
-    ],
-  },
-  {
-    path: "contacts/:contactId",
-    element: <Contact />,
-  },
-]);
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="list" element={<ShoppingListing/>} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-    <App />
-  </React.StrictMode>
-  
-);
+root.render(<App />);
