@@ -1,12 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
+import Navigation from '../trying';
 
 const Layout = () => {
   return (
     <>
-      <div class="navbar">
+      {/* <div class="navbar">
         <ul>
           <li>
-            <Link to="/" class="active">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/list">ShoppingList</Link>
@@ -15,7 +16,8 @@ const Layout = () => {
             <Link to="/contact">Contact me</Link>
           </li>  
         </ul>
-      </div>
+      </div> */}
+      <Navigation />
       <Outlet />
     </>
   )
