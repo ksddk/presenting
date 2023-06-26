@@ -9,26 +9,25 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import {Link } from "react-router-dom";
+import { Link } from '@mui/material';
 
 const pages = [
-  { name: 'Home',
+  {
+    name: 'Home',
     link: '/'
   },
-  { name: 'Shopping List',
+  {
+    name: 'Shopping List',
     link: '/list'
   },
-  { name: 'Contact me',
+  {
+    name: 'Contact me',
     link: '/contact'
   }
-]
-// const pages = ['Home', 'Shopping list', 'Contact me'];
-// const pagesLinks = ['/home', '/list', '/contact'];
+];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenUserMenu = (event) => {
@@ -43,7 +42,6 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -56,13 +54,12 @@ function ResponsiveAppBar() {
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
+              textDecoration: 'none'
+            }}>
+            Ksenia Dedik
           </Typography>
 
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -75,31 +72,32 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'pink',
               textDecoration: 'none',
             }}
           >
-            LOGO
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {/* {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))} */}
             {pages.map(({ name, link }) => (
-              <Link to={link}>{name}</Link>
+              <Link
+                key={pages.name}
+                href={link}
+                sx={{
+                  my: 2,
+                  color: 'white',
+                  display: 'block',
+                  fontWeight: 'bold',
+                  margin: '5px'
+                }}>
+                {name}
+              </Link>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="K" src="./dog.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -108,16 +106,15 @@ function ResponsiveAppBar() {
               anchorEl={anchorElUser}
               anchorOrigin={{
                 vertical: 'top',
-                horizontal: 'right',
+                horizontal: 'right'
               }}
               keepMounted
               transformOrigin={{
                 vertical: 'top',
-                horizontal: 'right',
+                horizontal: 'right'
               }}
               open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
+              onClose={handleCloseUserMenu}>
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>

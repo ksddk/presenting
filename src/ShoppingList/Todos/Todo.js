@@ -1,19 +1,15 @@
-import { FaUtensils, FaCheck, FaRegTrashAlt  } from "react-icons/fa";
-import styles from "./Todo.module.css"
+import { FaUtensils, FaCheck, FaRegTrashAlt } from 'react-icons/fa';
+import styles from './Todo.module.css';
 
-function Todo( { todo, deleteTodo, toggleTodo } ) {
-    return (
-        <div className={`${styles.todo} ${todo.isCompleted ? styles.completedTodo : ''}`}>
-            <FaUtensils className={styles.todoIcon}/>
-            <div className={styles.todoText}>{todo.text}</div>
-            <FaRegTrashAlt 
-                className={styles.deleteIcon} 
-                onClick={() => deleteTodo(todo.id)}
-            />
-            <FaCheck className={styles.checkIcon} onClick={() => toggleTodo(todo.id)} />
-
-        </div>
-    )
+function Todo({ todo, deleteTodo, toggleTodo }) {
+  return (
+    <div className={`${styles.todo} ${todo.isCompleted ? styles.completedTodo : ''}`}>
+      <FaUtensils className={styles.todoIcon} />
+      <div className={styles.todoText}>{todo.text}</div>
+      <FaRegTrashAlt className={styles.deleteIcon} onClick={() => deleteTodo(todo.id)} />
+      <FaCheck className={styles.checkIcon} onClick={() => toggleTodo(todo.id)} />
+    </div>
+  );
 }
 
-export default Todo
+export default Todo;
