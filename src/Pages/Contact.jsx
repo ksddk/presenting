@@ -1,7 +1,7 @@
 import { Link } from '@mui/material';
 
 const contacts = [
-  { name: 'Gmail', link: 'kseniya.dedik@gmail.com' },
+  { name: 'Gmail', link: 'mailto:kseniya.dedik@gmail.com' },
   { name: 'GitHub', link: 'https://github.com/ksddk' }
 ];
 
@@ -18,7 +18,8 @@ function Contact() {
             color: 'white',
             display: 'block',
             fontWeight: 'bold',
-            margin: '5px'
+            margin: '5px',
+            textDecoration: 'none'
           }}>
           {name}
         </Link>

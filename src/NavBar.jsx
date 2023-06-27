@@ -39,8 +39,8 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="static" /*sx={{ backgroundColor: 'red' }}*/>
+      <Container maxWidth="xl" sx={{ backgroundColor: '#DE3163' }}>
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -56,38 +56,21 @@ function ResponsiveAppBar() {
               color: 'inherit',
               textDecoration: 'none'
             }}>
-            Ksenia Dedik
+            Kseniya Dedik
           </Typography>
 
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'pink',
-              textDecoration: 'none',
-            }}
-          >
-          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map(({ name, link }) => (
               <Link
                 key={pages.name}
                 href={link}
                 sx={{
-                  my: 2,
+                  my: 5,
                   color: 'white',
                   display: 'block',
                   fontWeight: 'bold',
-                  margin: '5px'
+                  margin: '5px',
+                  textDecoration: 'none'
                 }}>
                 {name}
               </Link>
