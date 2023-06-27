@@ -1,3 +1,5 @@
+import Button from '../ShoppingList/UI/Button';
+
 const CV = [
   {
     name: 'Language',
@@ -30,6 +32,9 @@ const Home = () => {
           </p>
         </>
       ))}
+      <a href="CV_Mikita.pdf" download>
+        <Button>Download CV</Button>
+      </a>
     </>
   );
 };

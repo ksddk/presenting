@@ -2,8 +2,8 @@
 
 ## Add links:
 
-- contact info
-- github link
+- contact info done
+- github link done
 
 ## CV
 
@@ -11,7 +11,7 @@ Create a summary of your work (resume in pdf): available on the web application 
 
 ## Contact form
 
-Create a form that allows users to send a message to you from the web application
+Create a form that allows users to send a message to you from the web application ?????
 
 ## TBD
 
