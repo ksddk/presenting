@@ -47,7 +47,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map(({ name, link }) => (
               <Link
-                key={pages.name}
+                key={name}
                 href={link}
                 sx={{
                   my: 5,

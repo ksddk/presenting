@@ -1,6 +1,11 @@
+import React from 'react';
 import Button from '../ShoppingList/UI/Button';
 
-const CV = [
+interface CVItem {
+  name: string;
+  text: string;
+}
+const CV: CVItem[] = [
   {
     name: 'Language',
     text: 'English'
@@ -15,20 +20,19 @@ const Home = () => {
   return (
     <>
       <h1>Resume</h1>
-      {CV.map(({ name, text }) => (
+      {CV.map((item: CVItem) => (
         <>
-          <h3 key={CV.name}>{name}</h3>
+          <h3 key={item.name}>{item.name}</h3>
           <p
-            key={CV.text}
+            key={item.text}
             style={{
-              my: 2,
               color: 'white',
               display: 'block',
               fontWeight: 'bold',
               margin: '5px',
               textDecoration: 'none'
             }}>
-            {text}
+            {item.text}
           </p>
         </>
       ))}

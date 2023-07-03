@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaUtensils, FaCheck, FaRegTrashAlt } from 'react-icons/fa';
 import styles from './Todo.module.css';
 
