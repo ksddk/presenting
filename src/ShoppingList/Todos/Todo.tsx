@@ -1,8 +1,9 @@
 import React from 'react';
 import { FaUtensils, FaCheck, FaRegTrashAlt } from 'react-icons/fa';
 import styles from './Todo.module.css';
+import { ITodo, ITodoProps } from './todo.types';
 
-function Todo({ todo, deleteTodo, toggleTodo }) {
+function Todo({ todo, deleteTodo, toggleTodo }: ITodoProps) {
   return (
     <div className={`${styles.todo} ${todo.isCompleted ? styles.completedTodo : ''}`}>
       <FaUtensils className={styles.todoIcon} />

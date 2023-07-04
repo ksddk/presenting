@@ -1,6 +1,11 @@
 import { Link } from '@mui/material';
 
-const contacts = [
+interface IContact {
+  name: string;
+  link: string;
+}
+
+const contacts: IContact[] = [
   { name: 'Gmail', link: 'mailto:kseniya.dedik@gmail.com' },
   { name: 'GitHub', link: 'https://github.com/ksddk' }
 ];
@@ -9,9 +14,9 @@ function Contact() {
   return (
     <>
       <h1>Contact information</h1>
-      {contacts.map(({ name, link }) => (
+      {contacts.map(({ name, link }: IContact) => (
         <Link
-          key={contacts.name}
+          key={name}
           href={link}
           sx={{
             my: 2,

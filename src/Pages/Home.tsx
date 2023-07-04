@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from '../ShoppingList/UI/Button';
 
-interface CVItem {
+interface ICVItem {
   name: string;
   text: string;
 }
-const CV: CVItem[] = [
+const CV: ICVItem[] = [
   {
     name: 'Language',
     text: 'English'
@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       <h1>Resume</h1>
-      {CV.map((item: CVItem) => (
+      {CV.map((item: ICVItem) => (
         <>
           <h3 key={item.name}>{item.name}</h3>
           <p
@@ -36,7 +36,7 @@ const Home = () => {
           </p>
         </>
       ))}
-      <a href="CV_Mikita.pdf" download>
+      <a href="CV.pdf" download>
         <Button>Download CV</Button>
       </a>
     </>

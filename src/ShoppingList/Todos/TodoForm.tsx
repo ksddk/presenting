@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styles from './TodoForm.module.css';
 import Button from '../UI/Button';
+import { IAddTodo, OnSubmit } from './todo.types';
 
-function TodoForm({ addTodo }) {
+function TodoForm({ addTodo }: IAddTodo) {
   const [text, setText] = useState('');
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler: OnSubmit = (event) => {
     event.preventDefault();
     addTodo(text);
     setText('');

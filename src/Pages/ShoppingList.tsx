@@ -4,12 +4,13 @@ import { v4 as uuidv4 } from 'uuid';
 import TodoForm from '../ShoppingList/Todos/TodoForm';
 import TodosActions from '../ShoppingList/Todos/TodosActions';
 import TodoList from '../ShoppingList/Todos/TodoList';
+import { ITodo } from '../ShoppingList/Todos/todo.types';
 
 function ShoppingListing() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<ITodo[]>([]);
 
-  const addTodoHandler = (text) => {
-    const newTodo = {
+  const addTodoHandler = (text: string) => {
+    const newTodo: ITodo = {
       text,
       isCompleted: false,
       id: uuidv4()
@@ -17,11 +18,11 @@ function ShoppingListing() {
     setTodos([...todos, newTodo]);
   };
 
-  const deleteTodoHandler = (id) => {
+  const deleteTodoHandler = (id: string) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
-  const toggleTodoHandler = (id) => {
+  const toggleTodoHandler = (id: string) => {
     setTodos(
       todos.map((todo) => {
         return todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : { ...todo };
@@ -53,8 +54,8 @@ function ShoppingListing() {
         )}
         <TodoList todos={todos} deleteTodo={deleteTodoHandler} toggleTodo={toggleTodoHandler} />
         {completedTodosCounter > 0 && (
-          <h2>{`You bought ${completedTodosCounter} ${completedTodosCounter > 1 ? 'items' : 'item'
-            }!`}
+          <h2>
+            {`You bought ${completedTodosCounter} ${completedTodosCounter > 1 ? 'items' : 'item'}!`}
           </h2>
         )}
       </div>
