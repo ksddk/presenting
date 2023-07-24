@@ -4,8 +4,10 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+// import Avatar from '@mui/material/Avatar';
 import { Link } from '@mui/material';
+import Title from './Title.svg';
+// import styles from './NavBar.module.css'
 
 const pages = [
   {
@@ -15,17 +17,20 @@ const pages = [
   {
     name: 'Shopping List',
     link: '/list'
-  },
-  {
-    name: 'Contact me',
-    link: '/contact'
   }
 ];
 
 function ResponsiveAppBar() {
   return (
     <AppBar position="static">
-      <Container maxWidth="xl" sx={{ backgroundColor: '#DE3163' }}>
+      <Container
+        maxWidth="xl"
+        sx={{
+          border: 'solid green',
+          backgroundColor: ' #d8c6c9',
+          width: '1440px',
+          height: '96px'
+        }}>
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -33,25 +38,40 @@ function ResponsiveAppBar() {
             component="a"
             href="/"
             sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none'
+              border: 'solid blue',
+              width: '79.515px',
+              height: '32px'
+
+              // mr: 2,
+              // display: { xs: 'none', md: 'flex' },
+              // fontFamily: 'monospace',
+              // fontWeight: 700,
+              // letterSpacing: '.1rem',
+              // color: 'inherit',
+              // textDecoration: 'none'
             }}>
-            Kseniya Dedik
+            <img src={Title} alt="Kseniya Dedik" />
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box
+            sx={{
+              border: 'solid red',
+              flexGrow: 1,
+              display: { xs: 'none', md: 'flex', backgroundColor: ' #d8c6c9' },
+              flexDirection: 'column',
+              alignItems: 'center',
+              padding: '10px 0px',
+              gap: '8px'
+            }}>
             {pages.map(({ name, link }) => (
               <Link
                 key={name}
                 href={link}
+                // className={styles.link}
                 sx={{
                   my: 5,
-                  color: 'white',
+                  border: 'solid blue',
+                  color: '#333333',
                   display: 'block',
                   fontWeight: 'bold',
                   margin: '5px',
@@ -61,7 +81,7 @@ function ResponsiveAppBar() {
               </Link>
             ))}
           </Box>
-          <Avatar alt="Ks" src="./ks_photo_cropped.jpg" sx={{ transform: 'scale(1.5)' }} />
+          {/* <Avatar alt="Ks" src="./ks_photo_cropped.jpg" sx={{ transform: 'scale(1.5)' }} /> */}
         </Toolbar>
       </Container>
     </AppBar>

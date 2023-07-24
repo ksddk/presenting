@@ -15,11 +15,11 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="list" element={<ShoppingListing />} />
-          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
+
   );
 }
 
