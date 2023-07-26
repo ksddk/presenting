@@ -1,0 +1,41 @@
+.HomeContainer {
+  text-align: center;
+}
+
+.Title {
+  display: flex;
+  padding: 206px 104px 206px 104px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Title1st {
+  color: #333333;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 124%; /* 105.4px */
+  letter-spacing: -1.7px;
+}
+
+.Title2nd {
+  background: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 124%;
+  letter-spacing: -1.7px;
+}
+
+.Arrow {
+  width: 40px;
+  height: 40px;
+}

@@ -1,18 +1,11 @@
 import React from 'react';
-import Box from '@mui/material/Box';
+import styles from './NoPage.module.css';
 
 const NoPage = () => {
   return (
-    <Box
-      sx={{
-        color: 'white',
-        display: 'flex',
-        fontSize: 25,
-        textAlign: 'center',
-        height: '90%'
-      }}>
-      <h1>This page does not exist</h1>
-    </Box>
+    <div className={styles.NoPage}>
+      <p className={styles.NoPageText}>This page does not exist</p>
+    </div>
   );
 };
 

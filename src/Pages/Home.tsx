@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../ShoppingList/UI/Button';
+import styles from './Home.module.css';
+import ArrowDown from './Assets/ArrowDown.svg';
 
 interface ICVItem {
   name: string;
@@ -18,8 +19,12 @@ const CV: ICVItem[] = [
 
 const Home = () => {
   return (
-    <>
-      <h1>Resume</h1>
+    <div className={styles.HomeContainer}>
+      <div className={styles.Title}>
+        <div className={styles.Title1st}>I am a</div>
+        <div className={styles.Title2nd}>Full Stack Developer</div>
+      </div>
+      <img className={styles.Arrow} src={ArrowDown} alt="Arrow"></img>
       {CV.map((item: ICVItem) => (
         <>
           <h3 key={item.name}>{item.name}</h3>
@@ -36,10 +41,7 @@ const Home = () => {
           </p>
         </>
       ))}
-      <a href="CV.pdf" download>
-        <Button>Download CV</Button>
-      </a>
-    </>
+    </div>
   );
 };
 

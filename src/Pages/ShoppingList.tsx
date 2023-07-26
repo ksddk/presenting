@@ -41,8 +41,8 @@ function ShoppingListing() {
   const completedTodosCounter = todos.filter((todo) => todo.isCompleted).length;
 
   return (
-    <div className="App">
-      <div className="Content">
+    <div style={{ textAlign: 'center' }}>
+      <div>
         <h1>List to the supermarket</h1>
         <TodoForm addTodo={addTodoHandler} />
         {!!todos.length && (

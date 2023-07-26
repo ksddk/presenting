@@ -1,0 +1,10 @@
+.NoPage {
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 90%;
+}
+
+.NoPageText {
+  font-size: 25px;
+}

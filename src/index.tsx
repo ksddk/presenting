@@ -1,12 +1,11 @@
 import ReactDOM from 'react-dom/client';
-import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Pages/Layout';
 import Home from './Pages/Home';
-import Contact from './Pages/Contact';
 import ShoppingListing from './Pages/ShoppingList';
 import NoPage from './Pages/NoPage';
 import './index.css';
+import './fonts.css';
 
 export default function App() {
   return (
@@ -19,7 +18,6 @@ export default function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-
   );
 }
 
