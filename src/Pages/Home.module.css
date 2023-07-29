@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.HomeMainContentWrapper {
+  position: 'relative';
+}
+
 .Title {
   display: flex;
   padding: 206px 104px 206px 104px;
@@ -36,6 +40,88 @@
 }
 
 .Arrow {
+  cursor: pointer;
   width: 40px;
   height: 40px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.Work {
+  display: flex;
+  padding: 80px 110px 120px 110px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 97px;
+  align-self: stretch;
+  border: 3px solid purple;
+}
+
+.WorksTitle {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.WorksTitle1st {
+  color: #4f4f4f;
+  font-family: Work Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 60px */
+}
+
+.WorksTitle2nd {
+  background: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.CardWrapper {
+  display: flex;
+  height: 490px;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.WorkPhoto {
+  /* flex: 1 0 0; */
+  align-self: stretch;
+  border: 3px solid red;
+  min-width: 594px;
+  min-height: 490px;
+}
+
+.WorkTitle {
+  align-self: stretch;
+  background: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+.WorkText {
+  align-self: stretch;
+  color: #4f4f4f;
+  font-family: Work Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 48px */
 }

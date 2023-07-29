@@ -1,6 +1,5 @@
 .FooterContainer {
   display: flex;
-  border: 3px solid blue;
   height: 360px;
   padding: 80px 424px 40px 424px;
   flex-direction: column;
@@ -11,38 +10,29 @@
 }
 
 .wrapperContainer {
-  border: 3px solid coral;
   display: flex;
-  height: 60px;
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  height: 223px;
   width: 592px;
-  align-self: stretch;
   display: flex;
 }
 
 .TitleContainer {
-  border: 3px solid greenyellow;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
   align-self: stretch;
-  padding: 0 0 60px 0;
-  height: 115px;
   width: 592px;
 }
 
 .SocialMedia {
-  border: 3px solid yellow;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 56px;
   align-self: stretch;
-  height: 48px;
   width: 592px;
 }
 

@@ -1,46 +1,40 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './Home.module.css';
 import ArrowDown from './Assets/ArrowDown.svg';
-
-interface ICVItem {
-  name: string;
-  text: string;
-}
-const CV: ICVItem[] = [
-  {
-    name: 'Language',
-    text: 'English'
-  },
-  {
-    name: 'Skills',
-    text: 'Javascript'
-  }
-];
+import { CV, Experience, ICVItem } from './CV';
 
 const Home = () => {
+  const ref = useRef<null | HTMLDivElement>(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div className={styles.HomeContainer}>
-      <div className={styles.Title}>
-        <div className={styles.Title1st}>I am a</div>
-        <div className={styles.Title2nd}>Full Stack Developer</div>
+      <div className={styles.HomeMainContentWrapper}>
+        <div className={styles.Title}>
+          <div className={styles.Title1st}>I&apos;m a</div>
+          <div className={styles.Title2nd}>Full Stack Developer</div>
+        </div>
+        <img className={styles.Arrow} src={ArrowDown} alt="Arrow" onClick={handleClick} />
       </div>
-      <img className={styles.Arrow} src={ArrowDown} alt="Arrow"></img>
-      {CV.map((item: ICVItem) => (
-        <>
-          <h3 key={item.name}>{item.name}</h3>
-          <p
-            key={item.text}
-            style={{
-              color: 'white',
-              display: 'block',
-              fontWeight: 'bold',
-              margin: '5px',
-              textDecoration: 'none'
-            }}>
-            {item.text}
-          </p>
-        </>
-      ))}
+      <div className={styles.Work}>
+        <div className={styles.WorksTitle}>
+          <div className={styles.WorksTitle1st} ref={ref}>
+            Selected
+          </div>
+          <div className={styles.WorksTitle2nd}>Works</div>
+        </div>
+        {CV.map((item: ICVItem) => (
+          <div key={item.name} className={styles.CardWrapper}>
+            <img className={styles.WorkPhoto} alt="IMAGE" />
+            <div className={styles.WorkWrapper}>
+              <p className={styles.WorkTitle}>{item.name}</p>
+              <p className={styles.WorkText}>{item.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

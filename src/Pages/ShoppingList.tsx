@@ -5,6 +5,7 @@ import TodoForm from '../ShoppingList/Todos/TodoForm';
 import TodosActions from '../ShoppingList/Todos/TodosActions';
 import TodoList from '../ShoppingList/Todos/TodoList';
 import { ITodo } from '../ShoppingList/Todos/todo.types';
+import styles from './ShoppingList.module.css';
 
 function ShoppingListing() {
   const [todos, setTodos] = useState<ITodo[]>([]);
@@ -41,22 +42,25 @@ function ShoppingListing() {
   const completedTodosCounter = todos.filter((todo) => todo.isCompleted).length;
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <div>
-        <h1>List to the supermarket</h1>
+    <div className={styles.MainContainer}>
+      <div className={styles.MainContainer2}>
+        <div className={styles.TitleContainer}>
+          <i className={styles.Title1st}>List to the</i>
+          <div className={styles.Title2nd}>Supermarket</div>
+        </div>
         <TodoForm addTodo={addTodoHandler} />
+        <TodoList todos={todos} deleteTodo={deleteTodoHandler} toggleTodo={toggleTodoHandler} />
+        {completedTodosCounter > 0 && (
+          <p className={styles.TodoCounterText}>
+            {`You bought ${completedTodosCounter} ${completedTodosCounter > 1 ? 'items' : 'item'}!`}
+          </p>
+        )}
         {!!todos.length && (
           <TodosActions
             completedTodosExist={!!completedTodosCounter}
             resetTodos={resetTodoHandler}
             deleteCompletedTodos={deleteCompletedTodosHandler}
           />
-        )}
-        <TodoList todos={todos} deleteTodo={deleteTodoHandler} toggleTodo={toggleTodoHandler} />
-        {completedTodosCounter > 0 && (
-          <h2>
-            {`You bought ${completedTodosCounter} ${completedTodosCounter > 1 ? 'items' : 'item'}!`}
-          </h2>
         )}
       </div>
     </div>

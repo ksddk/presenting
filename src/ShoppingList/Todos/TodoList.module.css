@@ -4,5 +4,13 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 3px solid red;
+}
+
+.NoTodosText {
+  color: #000;
+  font-family: Work Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }

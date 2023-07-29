@@ -12,7 +12,7 @@ interface IContact {
 const contacts: IContact[] = [
   { name: 'Gmail', link: 'mailto:kseniya.dedik@gmail.com', logo: Mail },
   { name: 'GitHub', link: 'https://github.com/ksddk', logo: GitHub },
-  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/ksenia-dedik-670a57221', logo: LinkedIn }
+  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/ksddk/', logo: LinkedIn }
 ];
 
 function Footer() {
@@ -22,9 +22,9 @@ function Footer() {
         <div className={styles.TitleContainer}>
           <div className={styles.Text1}>
             <i className={styles.Text1st}>Get</i>
-            <i className={styles.Text12nd}>in Touch</i>
+            <i className={styles.Text12nd}>in Touch.</i>
           </div>
-          <p className={styles.Text2}>So that we can talk more about...</p>
+          <div className={styles.Text2}>So that we can talk more about...</div>
         </div>
         <div className={styles.SocialMedia}>
           {contacts.map(({ name, link, logo }: IContact) => (
