@@ -1,21 +1,22 @@
 import React from 'react';
-import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri';
-import Button from '../UI/Button';
+import Reset from './Assets/Reset.svg';
+import Delete from './Assets/Delete.svg';
 import styles from './TodosActions.module.css';
 import { ITodosActions } from './todo.types';
 
 function TodosActions({ resetTodos, deleteCompletedTodos, completedTodosExist }: ITodosActions) {
   return (
     <div className={styles.todosActionsContainer}>
-      <Button title="Reset items" onClick={resetTodos}>
-        <RiRefreshLine />
-      </Button>
-      <Button
+      <button className={styles.Reset} title="Reset items" onClick={resetTodos}>
+        <img src={Reset} className={styles.ResetImg} />
+      </button>
+      <button
+        className={styles.Delete}
         title="Delete marked items"
         onClick={deleteCompletedTodos}
         disabled={!completedTodosExist}>
-        <RiDeleteBin2Line />
-      </Button>
+        <img src={Delete} className={styles.DeleteImg} />
+      </button>
     </div>
   );
 }

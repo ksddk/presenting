@@ -37,9 +37,10 @@
   padding: 0 7px;
   font-size: 1.8rem;
   transition: transform 0.3s;
+  width: 40px;
+  height: 40px;
 }
 
-.checkIcon:hover,
 .deleteIcon:hover {
   cursor: pointer;
   transform: scale(1.3);

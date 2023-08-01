@@ -45,7 +45,7 @@ function ShoppingListing() {
     <div className={styles.MainContainer}>
       <div className={styles.MainContainer2}>
         <div className={styles.TitleContainer}>
-          <i className={styles.Title1st}>List to the</i>
+          <div className={styles.Title1st}>List to the</div>
           <div className={styles.Title2nd}>Supermarket</div>
         </div>
         <TodoForm addTodo={addTodoHandler} />
