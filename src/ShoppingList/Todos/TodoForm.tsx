@@ -15,14 +15,13 @@ function TodoForm({ addTodo }: IAddTodo) {
   return (
     <form className={styles.todoFormContainer} onSubmit={onSubmitHandler}>
       <input
-        // style={{ width: '100%' }}
         placeholder="Enter your item"
         value={text}
         onChange={(e) => {
           setText(e.target.value);
         }}
       />
-      <button type="submit" title="Submit" disabled={!text} className={styles.EnterButton}>
+      <button type="submit" title="Submit" disabled={!text} className={styles.enterButton}>
         <img src={EnterButton} />
       </button>
     </form>

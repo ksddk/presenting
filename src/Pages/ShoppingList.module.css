@@ -1,12 +1,10 @@
 .MainContainer {
-  border: 3px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .MainContainer2 {
-  border: 3px solid orange;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,9 +13,9 @@
 }
 
 .TitleContainer {
-  border: 3px solid yellow;
   width: 100%;
   text-align: center;
+  padding: 125px 418px 125px 400px;
 }
 
 .Title1st {

@@ -2,34 +2,37 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 3px solid blue;
   margin-bottom: 30px;
-  width: 667px;
+  width: 774px;
+  height: 100px;
   border-radius: 60px;
   background: #d9d9d9;
 }
 
 .todoFormContainer input {
-  color: #000;
+  all: none;
   font-family: Work Sans;
   font-size: 40px;
   font-style: normal;
   font-weight: 300;
   line-height: 150%; /* 60px */
-  font-size: 1.3rem;
   background: #d9d9d9;
-  border: 10px;
+  height: 80px;
+  /* border: 10px; */
   padding: 10px 15px;
   border: none;
-  border-radius: 100%;
-  border: 3px solid greenyellow;
+  border-radius: 60px 0 0 60px;
+  /* border: 3px solid greenyellow; */
   width: 100%;
+  outline: none;
 }
 
-.EnterButton {
+.enterButton {
   width: 60px;
   height: 60px;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
+  border: none;
   background: #d9d9d9;
   border-radius: 50%;
+  padding: 0px 100px 0px 0px;
 }
