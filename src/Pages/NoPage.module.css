@@ -1,10 +1,41 @@
 .NoPage {
-  color: white;
-  display: flex;
-  justify-content: center;
-  height: 90%;
+  display: inline-flex;
+  padding: 18px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.Title {
+  font-family: Work Sans;
+  font-size: 231px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 97.3%; /* 224.763px */
+  background: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 .NoPageText {
-  font-size: 25px;
+  color: var(--primary-foreground-color, #2d4642);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.36px;
+  max-width: 400px;
+}
+
+.Button {
+  width: 200px;
+  height: 55px;
+  border-radius: 40px;
+  border-color: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
 }

@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import styles from './Home.module.css';
 import ArrowDown from './Assets/ArrowDown.svg';
-import { CV, Experience, ICVItem } from './CV';
+import AboutMe from './HomePage/AboutMe';
+import Skills from './HomePage/Skills';
 
 const Home = () => {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -18,14 +19,10 @@ const Home = () => {
         </div>
         <img className={styles.Arrow} src={ArrowDown} alt="Arrow" onClick={handleClick} />
       </div>
-      <div className={styles.Work}>
-        <div className={styles.WorksTitle}>
-          <div className={styles.WorksTitle1st} ref={ref}>
-            Selected
-          </div>
-          <div className={styles.WorksTitle2nd}>Works</div>
-        </div>
-        {CV.map((item: ICVItem) => (
+      <div className={styles.CVContainer}>
+        <AboutMe />
+        <Skills />
+        {/* {CV.map((item: ICVItem) => (
           <div key={item.name} className={styles.CardWrapper}>
             <img className={styles.WorkPhoto} alt="IMAGE" />
             <div className={styles.WorkWrapper}>
@@ -33,7 +30,7 @@ const Home = () => {
               <p className={styles.WorkText}>{item.text}</p>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
