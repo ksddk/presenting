@@ -9,9 +9,11 @@ const NoPage = () => {
         Sorry. the content you&apos;re looking for doesn&apos;t exist. Either it was removed, or you
         mistyped the link.
       </p>
-      <button className={styles.Button}>
-        <i className={styles.ButtonText}>Go Home</i>
-      </button>
+      <form action="/">
+        <button type="submit" className={styles.Button}>
+          <i className={styles.ButtonText}>Go Home</i>
+        </button>
+      </form>
     </div>
   );
 };

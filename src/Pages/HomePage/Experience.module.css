@@ -1,0 +1,89 @@
+.ListTitle {
+  background: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.ExperiencesContainer {
+  width: 1214px;
+}
+
+.ExperienceContainer {
+  width: 1214px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.ExperiencePhoto {
+  width: 551px;
+  height: 454.529px;
+  border-radius: 16px;
+  background: lightgray -103.538px -32.93px / 121.42% 114.49% no-repeat;
+}
+
+.ExperienceText {
+  display: flex;
+  width: 446px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.NameText {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  background: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 329px;
+}
+
+.DescriptionText {
+  color: #000;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.36px;
+}
+
+.ExperienceButton {
+  cursor: pointer;
+  width: 200px;
+  height: 55px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 3px solid#bc3cd8;
+}
+
+.ButtonText {
+  color: #000;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+}
+
+.LeftPart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}

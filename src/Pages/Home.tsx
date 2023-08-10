@@ -3,6 +3,7 @@ import styles from './Home.module.css';
 import ArrowDown from './Assets/ArrowDown.svg';
 import AboutMe from './HomePage/AboutMe';
 import Skills from './HomePage/Skills';
+import Experience from './HomePage/Experience';
 
 const Home = () => {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -22,15 +23,7 @@ const Home = () => {
       <div className={styles.CVContainer}>
         <AboutMe />
         <Skills />
-        {/* {CV.map((item: ICVItem) => (
-          <div key={item.name} className={styles.CardWrapper}>
-            <img className={styles.WorkPhoto} alt="IMAGE" />
-            <div className={styles.WorkWrapper}>
-              <p className={styles.WorkTitle}>{item.name}</p>
-              <p className={styles.WorkText}>{item.text}</p>
-            </div>
-          </div>
-        ))} */}
+        <Experience />
       </div>
     </div>
   );
