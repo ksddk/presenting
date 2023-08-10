@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import styles from './AboutMe.module.css';
-import PersonalPhoto from '../Assets/ks_photo_cropped.jpg';
+import Avatar from '../Assets/ks_photo_cropped.jpg';
 
 export default function AboutMe() {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -17,7 +17,7 @@ export default function AboutMe() {
           support projects documentation
         </div>
       </div>
-      <img className={styles.Avatar} alt="KSENIYA DEDIK" />
+      <img className={styles.Avatar} src={Avatar} alt="KSENIYA DEDIK" />
     </div>
   );
 }

@@ -31,7 +31,6 @@ function Navigation() {
           </a>
         ))}
       </div>
-      {/* <img alt="Ks" src="./ks_photo_cropped.jpg" /> */}
     </div>
   );
 }

@@ -1,7 +1,8 @@
 .SkillsContainer {
-  width: 1216px;
+  width: 100%;
   height: 161px;
   display: inline-flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: 70px;
@@ -25,7 +26,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 70px;
+  flex-direction: column;
 }
 
 .NameText {
