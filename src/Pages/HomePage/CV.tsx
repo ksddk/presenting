@@ -29,7 +29,7 @@ export const CVSkills: ICVItem[] = [
 export const CVExperience: ICVItem[] = [
   {
     name: 'RESUME APP',
-    text: `The web application for recruiters and other interested parties, which allows them to get familiar with a working experience and ability to create frontend applications following the design documentation and technical requirements`,
+    text: `The web application for recruiters and other interested parties, which allows them to get familiar with a working experience, ability to create frontend applications following the design documentation and technical requirements`,
     link: 'https://github.com/ksddk/presenting'
   },
   {

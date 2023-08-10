@@ -46,6 +46,7 @@
   height: 40px;
   position: absolute;
   bottom: 20px;
+  left: 50%;
 }
 
 .CVContainer {
@@ -55,5 +56,4 @@
   align-items: flex-start;
   gap: 97px;
   align-self: stretch;
-  border: 3px solid purple;
 }

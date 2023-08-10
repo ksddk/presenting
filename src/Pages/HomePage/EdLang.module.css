@@ -1,0 +1,40 @@
+.EdLangContainer {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.InfoBox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  width: 50%;
+}
+
+.NameText {
+  font-family: Work Sans;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  background: var(--primary, linear-gradient(134deg, #bc3cd8 0%, #c54b8c 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.DescriptionText {
+  color: var(--gray-2, #4f4f4f);
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.36px;
+  display: flex;
+  flex-direction: column;
+}

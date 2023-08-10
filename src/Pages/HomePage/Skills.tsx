@@ -10,8 +10,8 @@ export default function Skills() {
         {CVSkills.map((item: ICVItem) => (
           <div key={item.name}>
             <div className={styles.SkillContainer}>
-              <p className={styles.NameText}>{item.name}</p>
-              <p className={styles.DescriptionText}>{item.text}</p>
+              <i className={styles.NameText}>{item.name}</i>
+              <i className={styles.DescriptionText}>{item.text}</i>
             </div>
           </div>
         ))}

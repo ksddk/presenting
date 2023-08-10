@@ -4,6 +4,7 @@ import ArrowDown from './Assets/ArrowDown.svg';
 import AboutMe from './HomePage/AboutMe';
 import Skills from './HomePage/Skills';
 import Experience from './HomePage/Experience';
+import EdLang from './HomePage/EdLang';
 
 const Home = () => {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -20,10 +21,11 @@ const Home = () => {
         </div>
         <img className={styles.Arrow} src={ArrowDown} alt="Arrow" onClick={handleClick} />
       </div>
-      <div className={styles.CVContainer}>
+      <div className={styles.CVContainer} ref={ref}>
         <AboutMe />
         <Skills />
         <Experience />
+        <EdLang />
       </div>
     </div>
   );
