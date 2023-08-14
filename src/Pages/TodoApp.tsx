@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import TodoForm from '../ShoppingList/Todos/TodoForm';
-import TodosActions from '../ShoppingList/Todos/TodosActions';
-import TodoList from '../ShoppingList/Todos/TodoList';
-import { ITodo } from '../ShoppingList/Todos/todo.types';
-import styles from './ShoppingList.module.css';
+import TodoForm from '../TodoApp/Todos/TodoForm';
+import TodosActions from '../TodoApp/Todos/TodosActions';
+import TodoList from '../TodoApp/Todos/TodoList';
+import { ITodo } from '../TodoApp/Todos/todo.types';
+import styles from './TodoApp.module.css';
 
-function ShoppingListing() {
+export default function TodoApp() {
   const [todos, setTodos] = useState<ITodo[]>([]);
 
   const addTodoHandler = (text: string) => {
@@ -45,14 +45,16 @@ function ShoppingListing() {
     <div className={styles.MainContainer}>
       <div className={styles.MainContainer2}>
         <div className={styles.TitleContainer}>
-          <div className={styles.Title1st}>List to the</div>
-          <div className={styles.Title2nd}>Supermarket</div>
+          <div className={styles.Title1st}>TODO</div>
+          <div className={styles.Title2nd}>APP</div>
         </div>
         <TodoForm addTodo={addTodoHandler} />
         <TodoList todos={todos} deleteTodo={deleteTodoHandler} toggleTodo={toggleTodoHandler} />
         {completedTodosCounter > 0 && (
           <p className={styles.TodoCounterText}>
-            {`You bought ${completedTodosCounter} ${completedTodosCounter > 1 ? 'items' : 'item'}!`}
+            {`You completed ${completedTodosCounter} ${
+              completedTodosCounter > 1 ? 'todos' : 'todo'
+            }!`}
           </p>
         )}
         {!!todos.length && (
@@ -66,5 +68,3 @@ function ShoppingListing() {
     </div>
   );
 }
-
-export default ShoppingListing;

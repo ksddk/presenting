@@ -12,8 +12,8 @@ const pages: IPages[] = [
     link: '/'
   },
   {
-    name: 'Shopping List',
-    link: '/list'
+    name: 'Todo App',
+    link: '/todoapp'
   }
 ];
 
