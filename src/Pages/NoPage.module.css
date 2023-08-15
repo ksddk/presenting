@@ -1,6 +1,6 @@
 .NoPage {
   display: inline-flex;
-  padding: 18px;
+  padding: 150px 0 0 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -38,7 +38,7 @@
   height: 55px;
   border-radius: 40px;
   background-color: transparent;
-  border: 3px solid black;
+  border: 3px solid#bc3cd8;
 }
 
 .ButtonText {
