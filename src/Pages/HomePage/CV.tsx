@@ -33,7 +33,7 @@ export const CVExperience: ICVItem[] = [
     link: 'https://github.com/ksddk/presenting'
   },
   {
-    name: 'TODO APP',
+    name: 'TODO APPLICATION',
     text: `The web application that provides functionality to manage tasks by the users with the functionality of items creation and deletion`,
     link: 'https://github.com/ksddk/todo-app'
   },

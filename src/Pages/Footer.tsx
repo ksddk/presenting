@@ -28,7 +28,12 @@ function Footer() {
         </div>
         <div className={styles.SocialMedia}>
           {contacts.map(({ name, link, logo }: IContact) => (
-            <a key={name} href={link} className={styles.ContactLink}>
+            <a
+              key={name}
+              href={link}
+              className={styles.ContactLink}
+              target="_blank"
+              rel="noreferrer">
               <img src={logo} alt={name} className={styles.Logo} />
             </a>
           ))}

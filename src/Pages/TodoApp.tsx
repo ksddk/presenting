@@ -46,7 +46,7 @@ export default function TodoApp() {
       <div className={styles.MainContainer2}>
         <div className={styles.TitleContainer}>
           <div className={styles.Title1st}>TODO</div>
-          <div className={styles.Title2nd}>APP</div>
+          <div className={styles.Title2nd}>APPLICATION</div>
         </div>
         <TodoForm addTodo={addTodoHandler} />
         <TodoList todos={todos} deleteTodo={deleteTodoHandler} toggleTodo={toggleTodoHandler} />

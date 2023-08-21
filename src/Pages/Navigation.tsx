@@ -12,7 +12,7 @@ const pages: IPages[] = [
     link: '/'
   },
   {
-    name: 'Todo App',
+    name: 'Todo Application',
     link: '/todoapp'
   }
 ];
@@ -20,9 +20,9 @@ const pages: IPages[] = [
 function Navigation() {
   return (
     <div className={styles.navigation}>
-      <div className={styles.svgContainer}>
+      <a href="/" className={styles.svgContainer}>
         <img src={Title} alt="Kseniya Dedik" />
-      </div>
+      </a>
 
       <div className={styles.navItems}>
         {pages.map(({ name, link }) => (

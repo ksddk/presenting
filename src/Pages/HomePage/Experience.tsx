@@ -14,11 +14,11 @@ export default function Skills() {
                 <p className={styles.NameText}>{item.name}</p>
                 <p className={styles.DescriptionText}>{item.text}</p>
               </div>
-              <form action={item.link}>
+              <a href={item.link} target="_blank" rel="noreferrer">
                 <button type="submit" className={styles.ExperienceButton}>
                   <i className={styles.ButtonText}>View Work</i>
                 </button>
-              </form>
+              </a>
             </div>
             <img className={styles.ExperiencePhoto} alt="Experience Photo" />
           </div>
