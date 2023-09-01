@@ -4,10 +4,17 @@
   justify-content: space-between;
   gap: 50px;
   width: 100%;
+  @media (max-width: 768px) {
+    /* border: 3px solid red; */
+    flex-direction: column;
+  }
+  @media (max-width: 320px) {
+    /* border: 3px solid blue; */
+  }
 }
 
 .InfoBox {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;

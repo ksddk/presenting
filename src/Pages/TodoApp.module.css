@@ -2,6 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  /* border: 3px solid red; */
+  @media (max-width: 768px) {
+    /* border: 3px solid red; */
+  }
+  @media (max-width: 320px) {
+    /* border: 3px solid blue; */
+  }
 }
 
 .MainContainer2 {
@@ -9,24 +17,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 600px;
+  /* width: 600px; */
+  /* border: 3px solid black; */
 }
 
 .TitleContainer {
   width: 100%;
   text-align: center;
   padding: 45px 418px 70px 400px;
+  font-size: 85px;
+  line-height: 124%;
+  letter-spacing: -1.7px;
+  @media (max-width: 768px) {
+    font-size: 55px;
+  }
+  @media (max-width: 320px) {
+    font-size: 40px;
+  }
 }
 
 .Title1st {
   color: var(--gray-1, #333);
   text-align: center;
   font-family: Work Sans;
-  font-size: 85px;
   font-style: normal;
   font-weight: 300;
-  line-height: 124%; /* 105.4px */
-  letter-spacing: -1.7px;
 }
 
 .Title2nd {
@@ -35,11 +50,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Work Sans;
-  font-size: 85px;
   font-style: normal;
   font-weight: 600;
-  line-height: 124%;
-  letter-spacing: -1.7px;
 }
 
 .TodoCounterText {

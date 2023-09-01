@@ -5,18 +5,25 @@
   align-items: center;
   justify-content: space-between;
   height: 86px;
+  @media (max-width: 768px) {
+    /* border: 3px solid red; */
+  }
+  @media (max-width: 320px) {
+    /* border: 3px solid blue; */
+  }
 }
 
 .svgContainer {
   width: 79.515px;
   height: 32px;
   flex-shrink: 0;
-  padding: 27px 0 37px 112px;
+  padding: 1.688rem 0 2.313rem 7rem;
 }
 
 .navItems {
-  display: inline-flex;
-  padding: 15px 112px 24px 0;
+  display: flex;
+  padding: 0.938rem 7rem 1.5rem 0;
+  /* padding: 15px 112px 24px 0; */
   align-items: flex-start;
   gap: 32px;
 }
