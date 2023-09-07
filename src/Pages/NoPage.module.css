@@ -35,6 +35,7 @@
 }
 
 .Button {
+  cursor: pointer;
   width: 200px;
   height: 55px;
   border-radius: 40px;
