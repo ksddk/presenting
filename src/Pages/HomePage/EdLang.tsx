@@ -5,7 +5,7 @@ import { ICVItem } from './CV';
 const EduLang: ICVItem[] = [
   {
     name: 'EDUCATION',
-    text: 'BELARUSIAN STATE UNIVERSITY OF INFORMATICS AND RADIOELECTRONICS\n \n2019-2022\n \nFaculty of Information Technology and Management\nSpecialty: Automated information processing systems\nDegree: Uncompleted'
+    text: 'BELARUSIAN STATE UNIVERSITY OF INFORMATICS AND RADIOELECTRONICS\n\nFaculty of Information Technology and Management\nSpecialty: Automated information processing systems\nDegree: Uncompleted'
   },
   {
     name: 'LANGUAGE',
