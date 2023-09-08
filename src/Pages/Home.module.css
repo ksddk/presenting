@@ -4,7 +4,8 @@
 
 .Title {
   display: flex;
-  padding: 206px 104px 206px 104px;
+  /* padding: 206px 104px 206px 104px; */
+  margin: 206px 0 206px 0;
   align-items: flex-start;
   flex-direction: column;
   align-items: center;
