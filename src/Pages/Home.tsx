@@ -19,12 +19,14 @@ const Home = () => {
           <div className={styles.Title1st}>I&apos;m a</div>
           <div className={styles.Title2nd}>Full Stack Developer</div>
         </div>
-        <img className={styles.Arrow} src={ArrowDown} alt="Arrow" onClick={handleClick} />
+        {/* TODO: implement arrow */}
+        {/* <img className={styles.Arrow} src={ArrowDown} alt="Arrow" onClick={handleClick} /> */}
       </div>
       <div className={styles.CVContainer} ref={ref}>
         <AboutMe />
         <Skills />
-        <Experience />
+        {/* TODO: refactor responsive design for Experiences */}
+        {/* <Experience /> */}
         <EdLang />
       </div>
     </div>

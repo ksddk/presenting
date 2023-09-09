@@ -6,6 +6,7 @@ export default function AboutMe() {
   return (
     <div className={styles.AboutMeContainer}>
       <div>
+        {/* TODO: revert image/text order on 768px */}
         <div className={styles.ListTitle}>About me</div>
         <div className={styles.AboutMeText}>
           JavaScript developer focused on web development. Strong knowledge of software development.

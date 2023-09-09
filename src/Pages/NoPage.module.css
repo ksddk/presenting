@@ -41,6 +41,7 @@
   border-radius: 40px;
   background-color: transparent;
   border: 3px solid#bc3cd8;
+
   @media (max-width: 768px) {
     width: 250px;
     height: 65px;

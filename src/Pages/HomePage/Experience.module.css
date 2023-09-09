@@ -19,8 +19,6 @@
 }
 
 .ExperienceContainer {
-  border: 3px solid green;
-  /* width: 1214px; */
   width: 100%;
   display: flex;
   justify-content: space-between;

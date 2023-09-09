@@ -4,30 +4,35 @@
 
 .Title {
   display: flex;
-  /* padding: 206px 104px 206px 104px; */
   margin: 206px 0 206px 0;
   align-items: flex-start;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  font-family: Work Sans;
+  font-size: 85px;
+  font-weight: 300;
+  line-height: 124%;
+  letter-spacing: -1.7px;
+
   @media (max-width: 768px) {
-    border: 3px solid red;
+    /* TODO: use rems */
+    font-size: 54px;
+    margin: 152px 0 152px 0;
   }
 
   @media (max-width: 320px) {
-    border: 3px solid blue;
+    font-size: 32px;
+    margin: 98px 0 98px 0;
   }
 }
 
 .Title1st {
   color: #333333;
   text-align: center;
-  font-family: Work Sans;
-  font-size: 85px;
   font-style: normal;
   font-weight: 300;
-  line-height: 124%; /* 105.4px */
-  letter-spacing: -1.7px;
 }
 
 .Title2nd {
@@ -35,12 +40,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Work Sans;
-  font-size: 85px;
   font-style: normal;
   font-weight: 600;
-  line-height: 124%;
-  letter-spacing: -1.7px;
   margin-top: 0.625rem;
 }
 
@@ -59,4 +60,16 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 97px;
+
+  @media (max-width: 992px) {
+    padding: 40px 40px 80px 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 30px 50px 30px;
+  }
+
+  @media (max-width: 320px) {
+    padding: 10px 20px 10px 15px;
+  }
 }

@@ -3,12 +3,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 20px;
+  /* TODO: add padding between education and language */
   @media (max-width: 768px) {
-    /* border: 3px solid red; */
     flex-direction: column;
-  }
-  @media (max-width: 320px) {
-    /* border: 3px solid blue; */
   }
 }
 
@@ -17,6 +15,10 @@
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .NameText {
@@ -31,6 +33,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 768px) {
+    /* TODO: check sizes of all titles: about me, experiences, education, language to be same size on all breakpoints */
+    font-size: 32px;
+  }
 }
 
 .DescriptionText {
@@ -45,4 +52,8 @@
   flex-direction: column;
   white-space: pre-wrap;
   margin-top: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }

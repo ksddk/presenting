@@ -5,11 +5,12 @@ export interface ICVItem {
 }
 export const CVSkills: ICVItem[] = [
   {
-    name: 'PROGRAMMING LANGUAGES',
+    // TODO: think about returning PROGRAMMING LANGUAGES
+    name: 'LANGUAGES',
     text: `Javascript, Typescript`
   },
   {
-    name: 'FRAMEWORKS/LIBRARIES',
+    name: 'FRAMEWORKS',
     text: `React, NodeJS, ExpressJS, NestJS`
   },
   {
