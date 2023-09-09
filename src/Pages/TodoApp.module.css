@@ -24,15 +24,19 @@
 .TitleContainer {
   width: 100%;
   text-align: center;
-  /* padding: 45px 418px 70px 400px; */
   font-size: 85px;
   line-height: 124%;
   letter-spacing: -1.7px;
+  margin: 45px 0 70px 0;
+
   @media (max-width: 768px) {
-    font-size: 55px;
-  }
-  @media (max-width: 320px) {
     font-size: 40px;
+    margin: 32px 0 40px 0;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 32px;
+    margin: 18px 0 20px 0;
   }
 }
 
@@ -60,5 +64,13 @@
   font-size: 26px;
   font-style: normal;
   font-weight: 300;
-  line-height: 150%; /* 39px */
+  line-height: 150%;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 18px;
+  }
 }

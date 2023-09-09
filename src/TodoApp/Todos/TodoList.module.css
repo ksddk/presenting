@@ -1,6 +1,4 @@
 .todoListContainer {
-  /* padding: 10px;
-    margin: 10px 50px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -13,4 +11,12 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 18px;
+  }
 }

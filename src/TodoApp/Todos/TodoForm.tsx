@@ -22,7 +22,7 @@ function TodoForm({ addTodo }: IAddTodo) {
         }}
       />
       <button type="submit" title="Submit" disabled={!text} className={styles.enterButton}>
-        <img src={EnterButton} />
+        <img src={EnterButton} className={styles.enterIcon} />
       </button>
     </form>
   );
