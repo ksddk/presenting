@@ -1,10 +1,14 @@
-import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import styles from './Experience.module.css';
 import { CVExperience, ICVItem } from './CV';
 
 export default function Skills() {
+  const isMedium = useMediaQuery({
+    query: '(max-width: 768px)'
+  });
+
   return (
-    <div>
+    <div className={styles.experiences}>
       <p className={styles.ListTitle}>Experience</p>
       <div className={styles.ExperiencesContainer}>
         {CVExperience.map((item: ICVItem) => (
@@ -12,6 +16,9 @@ export default function Skills() {
             <div className={styles.LeftPart}>
               <div className={styles.ExperienceText}>
                 <p className={styles.NameText}>{item.name}</p>
+                {isMedium ? (
+                  <img className={styles.ExperiencePhoto} alt="Experience Photo" />
+                ) : null}
                 <p className={styles.DescriptionText}>{item.text}</p>
               </div>
               <a href={item.link} target="_blank" rel="noreferrer">
@@ -20,7 +27,7 @@ export default function Skills() {
                 </button>
               </a>
             </div>
-            <img className={styles.ExperiencePhoto} alt="Experience Photo" />
+            {!isMedium ? <img className={styles.ExperiencePhoto} alt="Experience Photo" /> : null}
           </div>
         ))}
       </div>
