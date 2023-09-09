@@ -6,11 +6,7 @@
   justify-content: space-between;
   height: 86px;
   @media (max-width: 768px) {
-    height: 96px;
-    /* border: 3px solid red; */
-  }
-  @media (max-width: 320px) {
-    /* border: 3px solid blue; */
+    flex-direction: column;
   }
 }
 
@@ -18,13 +14,22 @@
   width: 79.515px;
   height: 32px;
   padding: 1.688rem 0 2.313rem 7rem;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 .navItems {
   display: flex;
   margin: 0.938rem 7rem 1.5rem 0;
   align-items: flex-start;
-  border: 3px solid red;
+  /* TODO: fix padding/margin with svgContainer */
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+  @media (max-width: 320px) {
+    flex-direction: column;
+  }
 }
 
 .link {
@@ -40,8 +45,7 @@
   line-height: 150%;
   text-transform: uppercase;
   margin: 0 32px 0 32px;
-  border: 3px solid green;
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 }

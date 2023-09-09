@@ -22,7 +22,7 @@ function Footer() {
         <div className={styles.TitleContainer}>
           <div className={styles.Text1}>
             <i className={styles.Text1st}>Get</i>
-            <i className={styles.Text12nd}>in Touch.</i>
+            <i className={styles.Text2nd}>in Touch.</i>
           </div>
           <div className={styles.Text2}>So that we can talk more about...</div>
         </div>

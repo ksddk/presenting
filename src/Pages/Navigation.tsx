@@ -18,6 +18,7 @@ const pages: IPages[] = [
 ];
 
 function Navigation() {
+  // TODO: add hamburger here on 768px
   return (
     <div className={styles.navigation}>
       <a href="/" className={styles.svgContainer}>
