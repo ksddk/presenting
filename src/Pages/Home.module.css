@@ -1,5 +1,7 @@
 .HomeMainContentWrapper {
   position: 'relative';
+  height: 100vh;
+  height: calc(100vh - 86px);
 }
 
 .Title {
@@ -16,14 +18,17 @@
   line-height: 124%;
   letter-spacing: -1.7px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     /* TODO: use rems */
     font-size: 54px;
     margin: 152px 0 152px 0;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 768px) {
     font-size: 32px;
+  }
+
+  @media (max-width: 320px) {
     margin: 98px 0 98px 0;
   }
 }
@@ -51,7 +56,7 @@
   height: 40px;
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: calc(50% - 10px);
 }
 
 .CVContainer {
