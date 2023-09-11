@@ -1,16 +1,14 @@
 .FooterContainer {
   display: flex;
-  /* padding: 100px 424px 100px 424px; */
-  padding: 100px 0 100px 0;
+  padding: 6.25rem 0 6.25rem 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
-    /* TODO: use rems */
-    padding: 50px 0 50px 0;
+    padding: 3.125rem 0 3.125rem 0;
   }
   @media (max-width: 320px) {
-    padding: 25px 0 25px 0;
+    padding: 1.563rem 0 1.563rem 0;
   }
 }
 
@@ -31,15 +29,14 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 50px;
+  margin-top: 3.125rem;
   align-self: stretch;
 
   @media (max-width: 768px) {
-    /* TODO: use rems */
-    margin-top: 26px;
+    margin-top: 1.625rem;
   }
   @media (max-width: 320px) {
-    margin-top: 18px;
+    margin-top: 1.125rem;
   }
 }
 
@@ -62,7 +59,7 @@
 
 .Text1st {
   color: #4f4f4f;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   text-align: center;
   font-style: normal;
 }

@@ -97,7 +97,7 @@
 }
 
 .DescriptionText {
-  color: #000;
+  color: var(--gray-2, #4f4f4f);
   font-family: Work Sans;
   font-size: 18px;
   font-style: normal;

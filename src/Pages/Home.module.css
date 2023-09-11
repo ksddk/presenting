@@ -6,7 +6,7 @@
 
 .Title {
   display: flex;
-  margin: 206px 0 206px 0;
+  margin: 12.875rem 0 12.875rem 0;
   align-items: flex-start;
   flex-direction: column;
   align-items: center;
@@ -19,9 +19,8 @@
   letter-spacing: -1.7px;
 
   @media (max-width: 1200px) {
-    /* TODO: use rems */
     font-size: 54px;
-    margin: 152px 0 152px 0;
+    margin: 9.5rem 0 9.5rem 0;
   }
 
   @media (max-width: 768px) {
@@ -29,7 +28,7 @@
   }
 
   @media (max-width: 320px) {
-    margin: 98px 0 98px 0;
+    margin: 6.125rem 0 6.125rem 0;
   }
 }
 
@@ -61,20 +60,20 @@
 
 .CVContainer {
   display: flex;
-  padding: 80px 110px 120px 110px;
+  padding: 5rem 6.875rem 7.5rem 6.875rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 97px;
 
   @media (max-width: 992px) {
-    padding: 40px 40px 80px 40px;
+    padding: 2.5rem 2.5rem 5rem 2.5rem;
   }
 
   @media (max-width: 768px) {
-    padding: 20px 30px 50px 30px;
+    padding: 1.25rem 1.875rem 3.125rem 1.875rem;
   }
 
   @media (max-width: 320px) {
-    padding: 10px 20px 10px 15px;
+    padding: 0.625rem 1.25rem 0.625rem 0.938rem;
   }
 }
