@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './TodoForm.module.css';
-import Button from '../UI/Button';
 import { IAddTodo, OnSubmit } from './todo.types';
 import EnterButton from './Assets/EnterButton.svg';
 
