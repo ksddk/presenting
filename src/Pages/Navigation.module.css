@@ -24,7 +24,6 @@
   display: flex;
   margin: 0.938rem 7rem 1.5rem 0;
   align-items: flex-start;
-  /* TODO: fix padding/margin with svgContainer */
   @media (max-width: 768px) {
     margin: 0;
   }
@@ -49,4 +48,8 @@
   @media (max-width: 768px) {
     font-size: 18px;
   }
+}
+
+.link:hover {
+  color: #c54b8c;
 }
