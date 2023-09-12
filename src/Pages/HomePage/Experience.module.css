@@ -20,7 +20,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 162px;
+  gap: 74px;
 }
 
 .ExperienceContainer {
@@ -62,7 +62,6 @@
   max-width: 446px;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 16px;
 
   @media (max-width: 1200px) {
     max-width: 346px;
