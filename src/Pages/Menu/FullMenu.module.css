@@ -5,31 +5,18 @@
   align-items: center;
   justify-content: space-between;
   height: 86px;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
 }
 
 .svgContainer {
   width: 79.515px;
   height: 32px;
-  padding: 1.688rem 0 2.313rem 7rem;
-  @media (max-width: 768px) {
-    padding: 0;
-  }
+  padding: 27px 0 2.313rem 7rem;
 }
 
 .navItems {
   display: flex;
   margin: 0.938rem 7rem 1.5rem 0;
   align-items: flex-start;
-  @media (max-width: 768px) {
-    margin: 0;
-  }
-  @media (max-width: 320px) {
-    flex-direction: column;
-  }
 }
 
 .link {

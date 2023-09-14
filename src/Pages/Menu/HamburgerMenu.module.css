@@ -1,0 +1,46 @@
+.hambIcon {
+  border: none;
+  background-color: #d8c6c9;
+  margin: 20px 0 0 20px;
+}
+
+.hambMenu {
+  background-color: #bdbdd5;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+
+.crossIcon {
+  border: none;
+  background-color: #bdbdd5;
+  margin: 20px 0 0 20px;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
+  text-decoration: none;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin: 0 32px 0 32px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.link:hover {
+  color: #c54b8c;
+}
