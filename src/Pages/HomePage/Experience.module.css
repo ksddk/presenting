@@ -30,7 +30,8 @@
   justify-content: space-between;
 }
 
-.ExperiencePhoto {
+.ExperiencePhoto,
+.TodoPhoto {
   width: 521px;
   height: 321px;
   border-radius: 16px;
@@ -48,13 +49,17 @@
 
   @media (max-width: 768px) {
     width: 300px;
-    height: 284px;
+    height: 254px;
   }
 
   @media (max-width: 320px) {
-    width: 251px;
+    width: 231px;
     height: 154px;
   }
+}
+
+.TodoPhoto {
+  margin-right: 3rem;
 }
 
 .ExperienceText {
@@ -124,7 +129,7 @@
   letter-spacing: -0.4px;
 }
 
-.LeftPart {
+.TextButton {
   display: flex;
   justify-content: space-between;
   flex-direction: column;

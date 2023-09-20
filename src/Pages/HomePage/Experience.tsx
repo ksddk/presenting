@@ -1,6 +1,10 @@
 import { useMediaQuery } from 'react-responsive';
 import styles from './Experience.module.css';
 import { CVExperience, ICVItem } from './CV';
+import ResumePhoto from '../Assets/ResumePhoto.jpg';
+import TodoPhoto from '../Assets/TodoPhoto.jpg';
+import DBPhoto from '../Assets/DBPhoto.jpg';
+import { getAutoHeightDuration } from '@mui/material/styles/createTransitions';
 
 export default function Skills() {
   const isMedium = useMediaQuery({
@@ -11,25 +15,63 @@ export default function Skills() {
     <div className={styles.experiences}>
       <p className={styles.ListTitle}>Experience</p>
       <div className={styles.ExperiencesContainer}>
-        {CVExperience.map((item: ICVItem) => (
-          <div key={item.name} className={styles.ExperienceContainer}>
-            <div className={styles.LeftPart}>
-              <div className={styles.ExperienceText}>
-                <p className={styles.NameText}>{item.name}</p>
-                {isMedium ? (
-                  <img className={styles.ExperiencePhoto} alt="Experience Photo" />
-                ) : null}
-                <p className={styles.DescriptionText}>{item.text}</p>
-              </div>
-              <a href={item.link} target="_blank" rel="noreferrer">
-                <button type="submit" className={styles.ExperienceButton}>
-                  <i className={styles.ButtonText}>View Work</i>
-                </button>
-              </a>
+        <div className={styles.ExperienceContainer}>
+          <div className={styles.TextButton}>
+            <div className={styles.ExperienceText}>
+              <p className={styles.NameText}>{CVExperience[0].name}</p>
+              {isMedium ? (
+                <img src={ResumePhoto} className={styles.ExperiencePhoto} alt="Resume Photo" />
+              ) : null}
+              <p className={styles.DescriptionText}>{CVExperience[0].text}</p>
             </div>
-            {!isMedium ? <img className={styles.ExperiencePhoto} alt="Experience Photo" /> : null}
+            <a href={CVExperience[0].link} target="_blank" rel="noreferrer">
+              <button type="submit" className={styles.ExperienceButton}>
+                <i className={styles.ButtonText}>View Work</i>
+              </button>
+            </a>
           </div>
-        ))}
+          {!isMedium ? (
+            <img src={ResumePhoto} className={styles.ExperiencePhoto} alt="Resume Photo" />
+          ) : null}
+        </div>
+        <div className={styles.ExperienceContainer}>
+          {!isMedium ? (
+            <img src={TodoPhoto} className={styles.TodoPhoto} alt="Resume Photo" />
+          ) : null}
+          <div className={styles.TextButton}>
+            <div className={styles.ExperienceText}>
+              <p className={styles.NameText}>{CVExperience[1].name}</p>
+              {isMedium ? (
+                <img src={TodoPhoto} className={styles.TodoPhoto} alt="Resume Photo" />
+              ) : null}
+              <p className={styles.DescriptionText}>{CVExperience[1].text}</p>
+            </div>
+            <a href={CVExperience[1].link} target="_blank" rel="noreferrer">
+              <button type="submit" className={styles.ExperienceButton}>
+                <i className={styles.ButtonText}>View Work</i>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className={styles.ExperienceContainer}>
+          <div className={styles.TextButton}>
+            <div className={styles.ExperienceText}>
+              <p className={styles.NameText}>{CVExperience[2].name}</p>
+              {isMedium ? (
+                <img src={DBPhoto} className={styles.ExperiencePhoto} alt="Resume Photo" />
+              ) : null}
+              <p className={styles.DescriptionText}>{CVExperience[2].text}</p>
+            </div>
+            <a href={CVExperience[2].link} target="_blank" rel="noreferrer">
+              <button type="submit" className={styles.ExperienceButton}>
+                <i className={styles.ButtonText}>View Work</i>
+              </button>
+            </a>
+          </div>
+          {!isMedium ? (
+            <img src={DBPhoto} className={styles.ExperiencePhoto} alt="Resume Photo" />
+          ) : null}
+        </div>
       </div>
     </div>
   );

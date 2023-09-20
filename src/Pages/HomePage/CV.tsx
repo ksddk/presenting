@@ -1,7 +1,11 @@
+import ResumePhoto from '../Assets/ResumePhoto.jpg';
+import TodoPhoto from '../Assets/TodoPhoto.jpg';
+
 export interface ICVItem {
   name: string;
   text: string;
   link?: string;
+  picture?: any;
 }
 export const CVSkills: ICVItem[] = [
   {
