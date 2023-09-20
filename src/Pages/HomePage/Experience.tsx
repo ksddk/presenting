@@ -35,14 +35,12 @@ export default function Skills() {
           ) : null}
         </div>
         <div className={styles.ExperienceContainer}>
-          {!isMedium ? (
-            <img src={TodoPhoto} className={styles.TodoPhoto} alt="Resume Photo" />
-          ) : null}
+          {!isMedium ? <img src={TodoPhoto} className={styles.TodoPhoto} alt="Todo Photo" /> : null}
           <div className={styles.TextButton}>
             <div className={styles.ExperienceText}>
               <p className={styles.NameText}>{CVExperience[1].name}</p>
               {isMedium ? (
-                <img src={TodoPhoto} className={styles.TodoPhoto} alt="Resume Photo" />
+                <img src={TodoPhoto} className={styles.TodoPhoto} alt="Todo Photo" />
               ) : null}
               <p className={styles.DescriptionText}>{CVExperience[1].text}</p>
             </div>
@@ -58,7 +56,7 @@ export default function Skills() {
             <div className={styles.ExperienceText}>
               <p className={styles.NameText}>{CVExperience[2].name}</p>
               {isMedium ? (
-                <img src={DBPhoto} className={styles.ExperiencePhoto} alt="Resume Photo" />
+                <img src={DBPhoto} className={styles.ExperiencePhoto} alt="DBPhoto" />
               ) : null}
               <p className={styles.DescriptionText}>{CVExperience[2].text}</p>
             </div>
@@ -69,7 +67,7 @@ export default function Skills() {
             </a>
           </div>
           {!isMedium ? (
-            <img src={DBPhoto} className={styles.ExperiencePhoto} alt="Resume Photo" />
+            <img src={DBPhoto} className={styles.ExperiencePhoto} alt="DBPhoto" />
           ) : null}
         </div>
       </div>

@@ -38,8 +38,8 @@
   background: lightgray -103.538px -32.93px / 121.42% 114.49% no-repeat;
 
   @media (max-width: 1200px) {
-    width: 441px;
-    height: 334px;
+    width: 643px;
+    height: 530px;
   }
 
   @media (max-width: 992px) {
@@ -133,5 +133,4 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 100%;
 }
