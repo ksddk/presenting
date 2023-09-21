@@ -1,14 +1,14 @@
 import react, { useState } from 'react';
-import Cross from '../Assets/Cross.svg';
-import Hamburger from '../Assets/Hamburger.svg';
-import { IPages } from '../Navigation';
+import Cross from '../../Pages/Assets/Cross.svg';
+import Hamburger from '../../Pages/Assets/Hamburger.svg';
+import { IPages } from '../../Pages/Navigation';
 import styles from './HamburgerMenu.module.css';
 
 interface Props {
   pages: IPages[];
 }
 
-export default function HambMenu({ pages }: Props) {
+export const HamburgerMenu = ({ pages }: Props) => {
   const [isOpen, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -37,4 +37,4 @@ export default function HambMenu({ pages }: Props) {
       ) : null}
     </>
   );
-}
+};

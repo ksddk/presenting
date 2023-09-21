@@ -1,7 +1,7 @@
 import styles from './Footer.module.css';
-import LinkedIn from './Assets/LinkedIn.svg';
-import Mail from './Assets/Mail.svg';
-import GitHub from './Assets/GitHub.svg';
+import LinkedIn from '../../Pages/Assets/LinkedIn.svg';
+import Mail from '../../Pages/Assets/Mail.svg';
+import GitHub from '../../Pages/Assets/GitHub.svg';
 
 interface IContact {
   name: string;
@@ -15,7 +15,7 @@ const contacts: IContact[] = [
   { name: 'LinkedIn', link: 'https://www.linkedin.com/in/ksddk/', logo: LinkedIn }
 ];
 
-function Footer() {
+export const Footer = () => {
   return (
     <div className={styles.FooterContainer}>
       <div className={styles.wrapperContainer}>
@@ -41,6 +41,4 @@ function Footer() {
       </div>
     </div>
   );
-}
-
-export default Footer;
+};

@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './Pages/Layout';
+import { Layout } from '../src/components';
 import Home from './Pages/Home';
 import TodoApp from './Pages/TodoApp';
 import NoPage from './Pages/NoPage';

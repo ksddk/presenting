@@ -1,9 +1,9 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Navigation from './Navigation';
-import Footer from './Footer';
+import { Footer } from '..';
+import Navigation from '../../Pages/Navigation';
 
-function Layout() {
+export const Layout = () => {
   return (
     <>
       <Navigation />
@@ -11,6 +11,4 @@ function Layout() {
       <Footer />
     </>
   );
-}
-
-export default Layout;
+};

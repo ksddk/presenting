@@ -8,7 +8,7 @@ const EduLang: ICVItem[] = [
     text: 'BELARUSIAN STATE UNIVERSITY OF INFORMATICS AND RADIOELECTRONICS\n\nFaculty of Information Technology and Management\nSpecialty: Automated information processing systems\nDegree: Uncompleted'
   },
   {
-    name: 'LANGUAGE',
+    name: 'LANGUAGES',
     text: 'English: B2+\n\nRussian: Native'
   }
 ];

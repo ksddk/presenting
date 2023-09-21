@@ -1,13 +1,13 @@
 import react from 'react';
-import Title from '../Assets/Title.svg';
-import { IPages } from '../Navigation';
+import Title from '../../Pages/Assets/Title.svg';
+import { IPages } from '../../Pages/Navigation';
 import styles from './FullMenu.module.css';
 
 interface Props {
   pages: IPages[];
 }
 
-export default function FullMenu({ pages }: Props) {
+export const FullMenu = ({ pages }: Props) => {
   return (
     <div className={styles.navigation}>
       <a href="/" className={styles.svgContainer}>
@@ -23,4 +23,4 @@ export default function FullMenu({ pages }: Props) {
       </div>
     </div>
   );
-}
+};

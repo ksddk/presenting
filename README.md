@@ -1,6 +1,23 @@
-# TODO
+assets
 
-## TBD
+components
 
-- skills representation (animations)
-- integrate 3rd parties
+- navigation
+- footer
+- layout
+- hamburger menu
+
+modules
+
+- todo
+
+pages
+
+- no page
+- todo
+- home
+
+utils
+
+TODO:
+es5 functions to arrow functions in components
