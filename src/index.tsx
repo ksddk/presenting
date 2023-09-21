@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../src/components';
-import Home from './Pages/HomePage/Home';
-import { TodoApp } from './modules/TodoApp/TodoApp';
-import { NoPage } from './Pages/NoPage';
+import { Home } from './Pages';
+import { TodoPage } from './Pages';
+import { NoPage } from './Pages';
 import './index.css';
 import './fonts.css';
 
@@ -13,7 +13,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="todoapp" element={<TodoApp />} />
+          <Route path="todoapp" element={<TodoPage />} />
         </Route>
         <Route path="*" element={<NoPage />} />
       </Routes>

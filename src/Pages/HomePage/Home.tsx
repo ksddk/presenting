@@ -3,7 +3,7 @@ import styles from './Home.module.css';
 import ArrowDown from './Assets/ArrowDown.svg';
 import { CVModule } from '../../modules/CVModule';
 
-const Home = () => {
+export const Home = () => {
   const ref = useRef<null | HTMLDivElement>(null);
 
   const handleClick = () => {
@@ -24,5 +24,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
