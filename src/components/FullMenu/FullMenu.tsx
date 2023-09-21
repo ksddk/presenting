@@ -1,6 +1,6 @@
 import react from 'react';
 import Title from '../../Pages/Assets/Title.svg';
-import { IPages } from '../Navigation/Navigation';
+import { IPages } from '../Navigation';
 import styles from './FullMenu.module.css';
 
 interface Props {

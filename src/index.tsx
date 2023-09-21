@@ -7,7 +7,7 @@ import { NoPage } from './Pages/NoPage';
 import './index.css';
 import './fonts.css';
 
-export default function App() {
+export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -19,7 +19,7 @@ export default function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(<App />);
