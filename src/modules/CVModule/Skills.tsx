@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Skills.module.css';
-import { CVSkills, ICVItem } from './CV';
+import { CVSkills, ICVItem } from './CVText';
 
-export default function Skills() {
+export const Skills = () => {
   return (
     <div>
       <p className={styles.ListTitle}>Skills</p>
@@ -18,4 +18,4 @@ export default function Skills() {
       </div>
     </div>
   );
-}
+};

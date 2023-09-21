@@ -3,7 +3,7 @@ import styles from './TodoForm.module.css';
 import { IAddTodo, OnSubmit } from './todo.types';
 import EnterButton from './Assets/EnterButton.svg';
 
-function TodoForm({ addTodo }: IAddTodo) {
+export const TodoForm = ({ addTodo }: IAddTodo) => {
   const [text, setText] = useState('');
   const onSubmitHandler: OnSubmit = (event) => {
     event.preventDefault();
@@ -25,6 +25,4 @@ function TodoForm({ addTodo }: IAddTodo) {
       </button>
     </form>
   );
-}
-
-export default TodoForm;
+};

@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
 import react, { useState } from 'react';
-import { HamburgerMenu } from '../components';
-import { FullMenu } from '../components';
+import { HamburgerMenu } from '..';
+import { FullMenu } from '..';
 
 export interface IPages {
   name: string;
@@ -19,12 +19,10 @@ const pages: IPages[] = [
   }
 ];
 
-const Navigation = () => {
+export const Navigation = () => {
   const isMedium = useMediaQuery({
     query: '(max-width: 768px)'
   });
 
   return <>{!isMedium ? <FullMenu pages={pages} /> : <HamburgerMenu pages={pages} />}</>;
 };
-
-export default Navigation;

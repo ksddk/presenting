@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './EdLang.module.css';
-import { ICVItem } from './CV';
+import { ICVItem } from './CVText';
 
 const EduLang: ICVItem[] = [
   {
@@ -13,7 +13,7 @@ const EduLang: ICVItem[] = [
   }
 ];
 
-export default function EdLang() {
+export const EdLang = () => {
   return (
     <div className={styles.EdLangContainer}>
       {EduLang.map((item: ICVItem) => (
@@ -24,4 +24,4 @@ export default function EdLang() {
       ))}
     </div>
   );
-}
+};

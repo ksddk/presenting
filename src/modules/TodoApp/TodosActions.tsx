@@ -4,7 +4,11 @@ import Delete from './Assets/Delete.svg';
 import styles from './TodosActions.module.css';
 import { ITodosActions } from './todo.types';
 
-function TodosActions({ resetTodos, deleteCompletedTodos, completedTodosExist }: ITodosActions) {
+export const TodosActions = ({
+  resetTodos,
+  deleteCompletedTodos,
+  completedTodosExist
+}: ITodosActions) => {
   return (
     <div className={styles.todosActionsContainer}>
       <button className={styles.Reset} title="Reset items" onClick={resetTodos}>
@@ -19,6 +23,4 @@ function TodosActions({ resetTodos, deleteCompletedTodos, completedTodosExist }:
       </button>
     </div>
   );
-}
-
-export default TodosActions;
+};

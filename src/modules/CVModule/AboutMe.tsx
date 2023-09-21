@@ -1,12 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styles from './AboutMe.module.css';
 import Avatar from '../Assets/ks_photo_cropped.jpg';
 
-export default function AboutMe() {
+export const AboutMe = () => {
   return (
     <div className={styles.AboutMeContainer}>
       <div>
-        {/* TODO: revert image/text order on 768px */}
         <div className={styles.ListTitle}>About me</div>
         <div className={styles.AboutMeText}>
           JavaScript developer focused on web development. Strong knowledge of software development.
@@ -18,4 +17,4 @@ export default function AboutMe() {
       <img className={styles.Avatar} src={Avatar} alt="KSENIYA DEDIK" />
     </div>
   );
-}
+};

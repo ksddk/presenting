@@ -1,9 +1,9 @@
 import React from 'react';
-import Todo from './Todo';
+import { Todo } from './Todo';
 import styles from './TodoList.module.css';
 import { ITodoListProps, ITodo } from './todo.types';
 
-function TodoList({ todos, deleteTodo, toggleTodo }: ITodoListProps) {
+export const TodoList = ({ todos, deleteTodo, toggleTodo }: ITodoListProps) => {
   return (
     <div className={styles.todoListContainer}>
       {!todos.length && <p className={styles.NoTodosText}>Item&apos;s list is empty</p>}
@@ -12,6 +12,4 @@ function TodoList({ todos, deleteTodo, toggleTodo }: ITodoListProps) {
       ))}
     </div>
   );
-}
-
-export default TodoList;
+};

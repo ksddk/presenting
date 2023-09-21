@@ -5,7 +5,7 @@ import TrashBin from './Assets/TrashBin.svg';
 import Circle from './Assets/Circle.svg';
 import Tick from './Assets/Tick.svg';
 
-function Todo({ todo, deleteTodo, toggleTodo }: ITodoProps) {
+export const Todo = ({ todo, deleteTodo, toggleTodo }: ITodoProps) => {
   return (
     <div className={`${styles.todo} ${todo.isCompleted ? styles.completedTodo : ''}`}>
       <div style={{ position: 'relative' }} onClick={() => toggleTodo(todo.id)}>
@@ -16,6 +16,4 @@ function Todo({ todo, deleteTodo, toggleTodo }: ITodoProps) {
       <img src={TrashBin} className={styles.deleteIcon} onClick={() => deleteTodo(todo.id)} />
     </div>
   );
-}
-
-export default Todo;
+};

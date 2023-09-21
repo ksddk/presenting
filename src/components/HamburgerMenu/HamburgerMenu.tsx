@@ -1,7 +1,7 @@
 import react, { useState } from 'react';
 import Cross from '../../Pages/Assets/Cross.svg';
 import Hamburger from '../../Pages/Assets/Hamburger.svg';
-import { IPages } from '../../Pages/Navigation';
+import { IPages } from '../Navigation/Navigation';
 import styles from './HamburgerMenu.module.css';
 
 interface Props {

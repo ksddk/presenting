@@ -2,10 +2,11 @@ assets
 
 components
 
-- navigation
+- full menu
 - footer
 - layout
 - hamburger menu
+- navigation
 
 modules
 

@@ -1,12 +1,12 @@
 import { useMediaQuery } from 'react-responsive';
+import { getAutoHeightDuration } from '@mui/material/styles/createTransitions';
 import styles from './Experience.module.css';
-import { CVExperience, ICVItem } from './CV';
+import { CVExperience, ICVItem } from './CVText';
 import ResumePhoto from '../Assets/ResumePhoto.jpg';
 import TodoPhoto from '../Assets/TodoPhoto.jpg';
 import DBPhoto from '../Assets/DBPhoto.jpg';
-import { getAutoHeightDuration } from '@mui/material/styles/createTransitions';
 
-export default function Skills() {
+export const Experience = () => {
   const isMedium = useMediaQuery({
     query: '(max-width: 768px)'
   });
@@ -73,4 +73,4 @@ export default function Skills() {
       </div>
     </div>
   );
-}
+};

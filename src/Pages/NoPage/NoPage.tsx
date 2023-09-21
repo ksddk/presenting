@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './NoPage.module.css';
 
-const NoPage = () => {
+export const NoPage = () => {
   return (
     <div className={styles.NoPage}>
       <p className={styles.Title}>404</p>
@@ -17,5 +17,3 @@ const NoPage = () => {
     </div>
   );
 };
-
-export default NoPage;

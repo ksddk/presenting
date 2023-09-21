@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import TodoForm from '../TodoApp/Todos/TodoForm';
-import TodosActions from '../TodoApp/Todos/TodosActions';
-import TodoList from '../TodoApp/Todos/TodoList';
-import { ITodo } from '../TodoApp/Todos/todo.types';
+import { TodoForm } from './TodoForm';
+import { TodosActions } from './TodosActions';
+import { TodoList } from './TodoList';
+import { ITodo } from './todo.types';
 import styles from './TodoApp.module.css';
 
-export default function TodoApp() {
+export const TodoApp = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
 
   const addTodoHandler = (text: string) => {
@@ -67,4 +67,4 @@ export default function TodoApp() {
       </div>
     </div>
   );
-}
+};

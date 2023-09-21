@@ -1,10 +1,7 @@
 import React, { useRef } from 'react';
 import styles from './Home.module.css';
 import ArrowDown from './Assets/ArrowDown.svg';
-import AboutMe from './HomePage/AboutMe';
-import Skills from './HomePage/Skills';
-import Experience from './HomePage/Experience';
-import EdLang from './HomePage/EdLang';
+import { CVModule } from '../../modules/CVModule';
 
 const Home = () => {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -22,10 +19,7 @@ const Home = () => {
         <img className={styles.Arrow} src={ArrowDown} alt="Arrow" onClick={handleClick} />
       </div>
       <div className={styles.CVContainer} ref={ref}>
-        <AboutMe />
-        <Skills />
-        <Experience />
-        <EdLang />
+        <CVModule />
       </div>
     </div>
   );
