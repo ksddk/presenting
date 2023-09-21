@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './AboutMe.module.css';
-import Avatar from '../Assets/ks_photo_cropped.jpg';
+import { Avatar } from '../../assets';
 
 export const AboutMe = () => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
-import Reset from './Assets/Reset.svg';
-import Delete from './Assets/Delete.svg';
+import { Reset, Delete } from './Assets';
 import styles from './TodosActions.module.css';
 import { ITodosActions } from './todo.types';
 

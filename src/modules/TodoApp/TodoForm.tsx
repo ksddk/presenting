@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './TodoForm.module.css';
 import { IAddTodo, OnSubmit } from './todo.types';
-import EnterButton from './Assets/EnterButton.svg';
+import { EnterButton } from './Assets';
 
 export const TodoForm = ({ addTodo }: IAddTodo) => {
   const [text, setText] = useState('');

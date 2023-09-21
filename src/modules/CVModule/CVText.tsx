@@ -1,21 +1,16 @@
-import ResumePhoto from '../Assets/ResumePhoto.jpg';
-import TodoPhoto from '../Assets/TodoPhoto.jpg';
-
 export interface ICVItem {
   name: string;
   text: string;
   link?: string;
-  picture?: any;
 }
 export const CVSkills: ICVItem[] = [
   {
-    // TODO: think about returning PROGRAMMING LANGUAGES
     name: 'LANGUAGES',
     text: `Javascript, Typescript`
   },
   {
     name: 'FRAMEWORKS',
-    text: `React, NodeJS, ExpressJS, NestJS`
+    text: `React, Redux, NodeJS, ExpressJS`
   },
   {
     name: 'WEB',

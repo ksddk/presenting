@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../src/components';
-import { Home } from './Pages';
-import { TodoPage } from './Pages';
-import { NoPage } from './Pages';
+import { Home } from './pages';
+import { TodoPage } from './pages';
+import { NoPage } from './pages';
 import './index.css';
 import './fonts.css';
 

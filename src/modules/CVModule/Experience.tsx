@@ -1,10 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
-import { getAutoHeightDuration } from '@mui/material/styles/createTransitions';
 import styles from './Experience.module.css';
-import { CVExperience, ICVItem } from './CVText';
-import ResumePhoto from '../Assets/ResumePhoto.jpg';
-import TodoPhoto from '../Assets/TodoPhoto.jpg';
-import DBPhoto from '../Assets/DBPhoto.jpg';
+import { CVExperience } from './CVText';
+import { ResumePhoto, TodoPhoto, DBPhoto } from '../../assets';
 
 export const Experience = () => {
   const isMedium = useMediaQuery({

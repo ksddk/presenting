@@ -1,7 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { Footer } from '..';
-import { Navigation } from '../index';
+import { Footer, Navigation } from '..';
 
 export const Layout = () => {
   return (

@@ -1,5 +1,5 @@
 import react from 'react';
-import Title from '../../Pages/Assets/Title.svg';
+import { Title } from '../../assets';
 import { IPages } from '../Navigation';
 import styles from './FullMenu.module.css';
 

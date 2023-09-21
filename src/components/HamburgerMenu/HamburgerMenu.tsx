@@ -1,6 +1,5 @@
 import react, { useState } from 'react';
-import Cross from '../../Pages/Assets/Cross.svg';
-import Hamburger from '../../Pages/Assets/Hamburger.svg';
+import { Cross, Hamburger } from '../../assets';
 import { IPages } from '../Navigation/Navigation';
 import styles from './HamburgerMenu.module.css';
 

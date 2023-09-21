@@ -1,7 +1,5 @@
 import styles from './Footer.module.css';
-import LinkedIn from '../../Pages/Assets/LinkedIn.svg';
-import Mail from '../../Pages/Assets/Mail.svg';
-import GitHub from '../../Pages/Assets/GitHub.svg';
+import { LinkedIn, Mail, GitHub } from '../../assets';
 
 interface IContact {
   name: string;

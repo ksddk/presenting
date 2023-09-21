@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import styles from './Home.module.css';
-import ArrowDown from './Assets/ArrowDown.svg';
+import { ArrowDown } from '../../assets';
 import { CVModule } from '../../modules/CVModule';
 
 export const Home = () => {

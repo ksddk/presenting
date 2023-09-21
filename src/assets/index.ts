@@ -1,0 +1,11 @@
+export { default as ArrowDown } from './ArrowDown.svg';
+export { default as Avatar } from './ks_photo_cropped.jpg';
+export { default as ResumePhoto } from './ResumePhoto.jpg';
+export { default as TodoPhoto } from './TodoPhoto.jpg';
+export { default as LinkedIn } from './LinkedIn.svg';
+export { default as Mail } from './Mail.svg';
+export { default as GitHub } from './GitHub.svg';
+export { default as Title } from './Title.svg';
+export { default as Cross } from './Cross.svg';
+export { default as DBPhoto } from './DBPhoto.jpg';
+export { default as Hamburger } from './Hamburger.svg';

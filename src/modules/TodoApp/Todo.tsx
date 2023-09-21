@@ -1,9 +1,7 @@
 import React from 'react';
 import styles from './Todo.module.css';
-import { ITodo, ITodoProps } from './todo.types';
-import TrashBin from './Assets/TrashBin.svg';
-import Circle from './Assets/Circle.svg';
-import Tick from './Assets/Tick.svg';
+import { ITodoProps } from './todo.types';
+import { TrashBin, Circle, Tick } from './Assets';
 
 export const Todo = ({ todo, deleteTodo, toggleTodo }: ITodoProps) => {
   return (
