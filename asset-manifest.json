@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/presenting/static/css/main.50577746.css",
-    "main.js": "/presenting/static/js/main.b9f3fa3b.js",
-    "static/media/ResumePhoto.jpg": "/presenting/static/media/ResumePhoto.669d0c4201811594a07f.jpg",
-    "static/media/TodoPhoto.jpg": "/presenting/static/media/TodoPhoto.0a0c1546b0575f2b5cc3.jpg",
-    "static/media/ks_photo_cropped.jpg": "/presenting/static/media/ks_photo_cropped.bfc951ad68dca92052c7.jpg",
-    "static/media/DBPhoto.jpg": "/presenting/static/media/DBPhoto.f8c15d292b7c4efb6c3d.jpg",
-    "static/media/Title.svg": "/presenting/static/media/Title.75bba9e5f762431f0fbbb6a3b9378bb7.svg",
-    "static/media/Delete.svg": "/presenting/static/media/Delete.ca3a23ba9f0310c96d9747261e544297.svg",
-    "static/media/TrashBin.svg": "/presenting/static/media/TrashBin.6f73c133492ce5ded9cf9b6cdd529393.svg",
-    "static/media/Reset.svg": "/presenting/static/media/Reset.51f42f57a1c212c87b08040ea815a1ff.svg",
-    "static/media/GitHub.svg": "/presenting/static/media/GitHub.8a5f039837f6702dcd9e4797c180720a.svg",
-    "static/media/LinkedIn.svg": "/presenting/static/media/LinkedIn.57c542cf505d5e2ce95cc5204da30d7b.svg",
-    "static/media/EnterButton.svg": "/presenting/static/media/EnterButton.99fd10169ac4ba91774de8aa6cb9c942.svg",
-    "static/media/Mail.svg": "/presenting/static/media/Mail.750c7d11d77852789babc5d46ca0a53c.svg",
-    "index.html": "/presenting/index.html",
-    "static/media/Tick.svg": "/presenting/static/media/Tick.c50ea605a83f8f4796ca4818bb029ee8.svg",
-    "static/media/Hamburger.svg": "/presenting/static/media/Hamburger.07cdee382f0193936678ab2729a036de.svg",
-    "static/media/Cross.svg": "/presenting/static/media/Cross.d775ba50736addaf62d08be60538ae2f.svg",
-    "static/media/ArrowDown.svg": "/presenting/static/media/ArrowDown.0983e58004059df43dda34b455c0acc3.svg",
-    "static/media/Circle.svg": "/presenting/static/media/Circle.f0190ba42c8cee21c02b3722d8211194.svg",
-    "main.50577746.css.map": "/presenting/static/css/main.50577746.css.map",
-    "main.b9f3fa3b.js.map": "/presenting/static/js/main.b9f3fa3b.js.map"
+    "main.css": "/static/css/main.50577746.css",
+    "main.js": "/static/js/main.e06edf69.js",
+    "static/media/ResumePhoto.jpg": "/static/media/ResumePhoto.669d0c4201811594a07f.jpg",
+    "static/media/TodoPhoto.jpg": "/static/media/TodoPhoto.0a0c1546b0575f2b5cc3.jpg",
+    "static/media/ks_photo_cropped.jpg": "/static/media/ks_photo_cropped.bfc951ad68dca92052c7.jpg",
+    "static/media/DBPhoto.jpg": "/static/media/DBPhoto.f8c15d292b7c4efb6c3d.jpg",
+    "static/media/Title.svg": "/static/media/Title.75bba9e5f762431f0fbbb6a3b9378bb7.svg",
+    "static/media/Delete.svg": "/static/media/Delete.ca3a23ba9f0310c96d9747261e544297.svg",
+    "static/media/TrashBin.svg": "/static/media/TrashBin.6f73c133492ce5ded9cf9b6cdd529393.svg",
+    "static/media/Reset.svg": "/static/media/Reset.51f42f57a1c212c87b08040ea815a1ff.svg",
+    "static/media/GitHub.svg": "/static/media/GitHub.8a5f039837f6702dcd9e4797c180720a.svg",
+    "static/media/LinkedIn.svg": "/static/media/LinkedIn.57c542cf505d5e2ce95cc5204da30d7b.svg",
+    "static/media/EnterButton.svg": "/static/media/EnterButton.99fd10169ac4ba91774de8aa6cb9c942.svg",
+    "static/media/Mail.svg": "/static/media/Mail.750c7d11d77852789babc5d46ca0a53c.svg",
+    "index.html": "/index.html",
+    "static/media/Tick.svg": "/static/media/Tick.c50ea605a83f8f4796ca4818bb029ee8.svg",
+    "static/media/Hamburger.svg": "/static/media/Hamburger.07cdee382f0193936678ab2729a036de.svg",
+    "static/media/Cross.svg": "/static/media/Cross.d775ba50736addaf62d08be60538ae2f.svg",
+    "static/media/ArrowDown.svg": "/static/media/ArrowDown.0983e58004059df43dda34b455c0acc3.svg",
+    "static/media/Circle.svg": "/static/media/Circle.f0190ba42c8cee21c02b3722d8211194.svg",
+    "main.50577746.css.map": "/static/css/main.50577746.css.map",
+    "main.e06edf69.js.map": "/static/js/main.e06edf69.js.map"
   },
   "entrypoints": [
     "static/css/main.50577746.css",
-    "static/js/main.b9f3fa3b.js"
+    "static/js/main.e06edf69.js"
   ]
 }
