@@ -1,0 +1,11 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="charm:tick">
+<path id="Vector" d="M5.15625 16.4062L11.7188 22.9688L24.8438 8.90625" stroke="url(#paint0_linear_203_425)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_203_425" x1="5.20348" y1="8.76218" x2="28.3048" y2="13.9115" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BC3CD8"/>
+<stop offset="1" stop-color="#C54B8C"/>
+</linearGradient>
+</defs>
+</svg>
