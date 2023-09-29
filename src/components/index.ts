@@ -3,4 +3,3 @@ export * from './Footer';
 export * from './HamburgerMenu';
 export * from './Layout';
 export * from './Navigation';
-export * from './NoPage';
