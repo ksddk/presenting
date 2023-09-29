@@ -1,9 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../src/components';
-import { Home } from './pages/HomePage/Home';
-import { TodoPage } from './pages/TodoPage/TodoPage';
-import { NoPage } from './pages/NoPage/NoPage';
+import { Home, TodoPage, NoPage } from '../src/pages';
 import './index.css';
 import './fonts.css';
 
