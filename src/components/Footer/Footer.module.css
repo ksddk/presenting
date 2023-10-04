@@ -1,14 +1,14 @@
 .FooterContainer {
   display: flex;
-  padding: 6.25rem 0 6.25rem 0;
+  padding: 100px 0 100px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
-    padding: 3.125rem 0 3.125rem 0;
+    padding: 50px 0 50px 0;
   }
   @media (max-width: 320px) {
-    padding: 1.563rem 0 1.563rem 0;
+    padding: 25px 0 25px 0;
   }
 }
 
@@ -29,14 +29,14 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin-top: 3.125rem;
+  margin-top: 50px;
   align-self: stretch;
 
   @media (max-width: 768px) {
-    margin-top: 1.625rem;
+    margin-top: 26px;
   }
   @media (max-width: 320px) {
-    margin-top: 1.125rem;
+    margin-top: 18px;
   }
 }
 
@@ -59,7 +59,7 @@
 
 .Text1st {
   color: #4f4f4f;
-  margin-right: 0.625rem;
+  margin-right: 10px;
   text-align: center;
   font-style: normal;
 }
