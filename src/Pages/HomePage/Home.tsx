@@ -14,7 +14,7 @@ export const Home = () => {
       <div className={styles.HomeMainContentWrapper}>
         <div className={styles.Title}>
           <div className={styles.Title1st}>I&apos;m a</div>
-          <div className={styles.Title2nd}>Full Stack Developer</div>
+          <div className={styles.Title2nd}>Frontend Developer</div>
         </div>
         <img className={styles.Arrow} src={ArrowDown} alt="Arrow" onClick={handleClick} />
       </div>
